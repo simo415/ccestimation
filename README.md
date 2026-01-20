@@ -1,5 +1,7 @@
 # Confluent Cost Calculator
 
+This is the repository for a simple [Confluent cost calculator](https://simo415.github.io/ccestimation/).
+
 A small React app (Vite) that estimates monthly Confluent costs for Standard, Enterprise and Dedicated clusters based on throughput, average message size, retention and replication.
 
 Quick start:
