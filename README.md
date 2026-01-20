@@ -17,3 +17,24 @@ Notes:
 - This is not official Confluent pricing.
  - You can now add multiple topics/use-cases. Each topic has its own throughput, average message size and retention.
  - Replication is fixed to Confluent's default of 3 (no user override). The calculator sums storage and network across topics then applies replication.
+
+Deploying to GitHub Pages
+-------------------------
+
+This project is configured to deploy to GitHub Pages for the repository `simo415/ccestimation`.
+
+1. Install dev dependencies (adds `gh-pages`):
+
+```sh
+npm install
+```
+
+2. Build and deploy:
+
+```sh
+npm run deploy
+```
+
+This runs `npm run build` and then publishes the `dist/` folder to the `gh-pages` branch using the `gh-pages` package. The Vite `base` has been set to `/ccestimation/` in `vite.config.js` so static assets load correctly when served from GitHub Pages.
+
+If your repository name or GitHub username is different, update the `homepage` field in `package.json` and the `base` value in `vite.config.js` accordingly.
