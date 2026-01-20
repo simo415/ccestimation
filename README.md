@@ -2,10 +2,10 @@
 
 A small React app (Vite) that estimates monthly Confluent costs for Standard, Enterprise and Dedicated clusters based on throughput, average message size, retention and replication.
 
-Quick start (Windows PowerShell):
+Quick start:
 
-```powershell
-cd c:\Users\Simon\projects\ConfluentCostCalc
+```sh
+cd ConfluentCostCalc
 npm install
 npm run dev
 ```
